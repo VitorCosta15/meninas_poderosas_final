@@ -1,0 +1,47 @@
+STOP
+STORE A
+LABEL MULT DOIS;isaincomoda
+COPY A B;testev
+label COPY A B;COM
+
+LABEL LOAD A;COMENTAS
+ SUB B
+ MULT C
+TESTANO COPY A B;testev
+ ADD B
+WWE LOAD B;insuportavel
+ MULT A
+ ADD B
+ ADD E
+WWW LOAD E;insuportavel
+ MULT D
+ ADD E
+ ADD A;gasdyud
+ ADD C
+ SUB A
+ MULT D
+ MULT C;isaincomoda
+ SUB A
+ ADD D
+ MULT D
+ ADD E
+ SUB B
+ ADD D
+JP LOAD D;insuportavel
+ MULT K
+ ADD D
+ ADD UM;gasdyud
+ ADD DOIS
+ SUB UM
+ MULT TRES
+ MULT DOIS;isaincomoda
+ SUB UM
+ ADD TRES
+ MULT TRES
+ ADD CINCO
+ SUB QUATRO
+ ADD SETE
+ SUB SEIS
+ MULT OITO
+ STORE A
+STOP

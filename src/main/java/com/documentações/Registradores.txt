@@ -1,0 +1,31 @@
+com/maquina/registradores
+
+A forma como pensei de criar os registradores foi a seguinte:
+
+PC:
+função estática -> inicializa com 0
+função execute -> acrescenta +4 ao valor interno.
+função setPC -> seta um valor inserido pelo programador.
+
+SP:
+é definido como privado uma pilha de inteiros que vai armazenar o CONTEÚDO do que for necessário.
+
+função estatica -> insere o valor 0 no topo da pilha e seta a sua posição para '2'.
+função setSP -> insere um valor no topo da pilha.
+função getSP -> retorna e retira o valor do topo da pilha.
+
+ACC:
+funçao setACC -> insere um valor no acumulador
+funçao getACC -> retorna o valor do acumulador
+
+MOP:
+funçao setMOP -> insere um valor no modo de operação
+funçao getMOP -> retorna o valor do modo de operação
+
+RI:
+funçao setRI -> insere um valor no registrador de instruções
+funçao getRI -> retorna o valor do registrador de instruções
+
+RE:
+funçao setRE -> insere um valor no registrador de endereçamento de memória
+funçao getRE -> retorna o valor do registrador de endereçamento de memória
