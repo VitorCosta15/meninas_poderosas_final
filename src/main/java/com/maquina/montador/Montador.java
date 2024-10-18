@@ -28,13 +28,6 @@ public class Montador {
     private static Map<String, Integer> hashHasUsedMap = new HashMap<String, Integer>();
     private static ArrayList<Integer> linhalst = new ArrayList<Integer>();   // array de inteiros de linhas do lst
 
-    static void initializeFiles() {
-        DividirArquivoASM.main(null);
-        ASM1 = new File("src/main/java/com/maquina/montador/entradaMontador1.asm");
-        ASM2 = new File("src/main/java/com/maquina/montador/entradaMontador2.asm");
-        InstructionsTable = new File("src/main/java/com/maquina/montador/InstructionsTable.txt");
-    }
-
     // construtor que proibe instâncias de montadores
     private Montador() {
         throw new UnsupportedOperationException("Não é possível instanciar esta classe.");
@@ -810,6 +803,13 @@ public class Montador {
         //-->isso aqui printa toda a tabela hash pra debug
         // mapTabelaRotulos.forEach((key, value) -> System.out.println("Chave: " + key + ", Valor: " + value)); 
         // imprimirErros(linhalst, errosdolst);
+    }
+
+    static void initializeFiles() {
+        DividirArquivoASM.main(null);
+        ASM1 = new File("src/main/java/com/maquina/montador/entradaMontador1_ontem.asm");
+        ASM2 = new File("src/main/java/com/maquina/montador/entradaMontador2_ontem.asm");
+        InstructionsTable = new File("src/main/java/com/maquina/montador/InstructionsTable.txt");
     }
 
     public static Scanner abrirArquivo(File file) throws IOException {
