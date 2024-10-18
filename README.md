@@ -1,23 +1,22 @@
-# meninas_poderosas
-Trabalho de PS
+# Máquina Virtual
+Trabalho como avaliação semestral
 
-### Documentação código
-Ao criar e finalizar arquivos, acrescente no diretório "com/documentações" um arquivo txt com o seguinte formato "NomeDoQueFoiCriado.txt", a menos que consiga explicar tudo no próprio código inserido. Ex: Registradores.txt
+#### `Instituição:` Universidade Federal de Pelotas
 
---- 
+#### `Disciplina:` Programação de Sistemas, 5º semestre
 
-#### Nomenclatura de variáveis
-Funções: início com letra minúscula e letra maiúscula para troca de sílaba. Ex: novaFuncao
-Classes: início com letra maiúscula, demais regras idênticas. Ex: ClasseNova
+#### `Linguagens:` Java e JavaFX
 
----
+#### `Gerenciador de projetos:` Maven
 
-#### Identação
-` novaFuncao(){
+#### `Professor orientador:` Anderson P. Ferrugem
 
-} `
-
----
-
-#### Facilitador de funções
-Utilizar o nome de funções padronizado: funções que retornam valor começam com "get"; funções que setam valor começam com "set";
+## Integrantes: 
+- [Cassiano Pessoa](https://github.com/Caspessoa)
+- [Vitor Costa](https://github.com/VitorCosta15)
+- [Vitor Rafael](https://github.com/VRSS-A)
+- [Rodrigo Lopes](https://github.com/rmdlopes)
+- [Luciani Queiroz](https://github.com/LuciAquino94)
+- [Thiago Piccoli](https://github.com/ThiagoPiccoli)
+- [Isadora Dias](https://github.com/dvisa7178)
+- [Gabriel Weiand](https://github.com/Gabriel-Weiand)
