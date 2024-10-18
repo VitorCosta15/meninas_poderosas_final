@@ -12,6 +12,7 @@ import com.application.globals;
 import com.maquina.Memoria;
 import com.maquina.montador.Montador;
 import com.maquina.ligador.Ligador;
+import com.maquina.macro.macroProcess;
 import com.maquina.mid_end.MemoryDisplay;
 import com.maquina.registradores.ACC;
 import com.maquina.registradores.PC;
@@ -69,7 +70,7 @@ public class MachineController implements Initializable {
         
         
         try{
-            //Macros.execute();
+            macroProcess.executeMacro();
             Montador.executeMontador();
             Ligador.main(null);
             File arquivo_memoria = new File("src/main/java/com/maquina/carregador/mod1.hpx");
@@ -84,6 +85,9 @@ public class MachineController implements Initializable {
                 String line = reader.nextLine();
                 if (line.equals(";")){                
                     break;
+                }
+                if (line.equals("")){                
+                    continue;
                 }                
                 String[] fragmentos = line.split(" ");
                 endereco = Integer.parseInt(fragmentos[0]);
@@ -98,7 +102,6 @@ public class MachineController implements Initializable {
                     Memoria.setDataOnMemory(endereco+2, operando2, false);
                 }
             }
-            // Carregador.loadPrograma("src/main/java/com/maquina/carregador/mod1.hpx");
         } catch (IOException e) {
             e.printStackTrace();
         }

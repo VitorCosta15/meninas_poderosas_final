@@ -10,6 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import com.maquina.macro.DividirArquivoASM;
+
 //classe estatica do Montador
 public class Montador {
 
@@ -27,6 +29,7 @@ public class Montador {
     private static ArrayList<Integer> linhalst = new ArrayList<Integer>();   // array de inteiros de linhas do lst
 
     static void initializeFiles() {
+        DividirArquivoASM.main(null);
         ASM1 = new File("src/main/java/com/maquina/montador/entradaMontador1.asm");
         ASM2 = new File("src/main/java/com/maquina/montador/entradaMontador2.asm");
         InstructionsTable = new File("src/main/java/com/maquina/montador/InstructionsTable.txt");
